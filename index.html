@@ -40,8 +40,10 @@
   </head>
 
 <body>
-  <!-- <div id="particles-js"></div> -->
 
+  
+  <!-- <div id="particles-js"></div> -->
+  
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
@@ -1210,6 +1212,8 @@
       </div>
     </div>
   </footer><!-- End Footer -->
+  <div class="loader"></div>
+  
 
     <a
       href="#"
@@ -1239,6 +1243,20 @@
 </body>
 
 </html>
+
+<script>
+  // $(document).ready(function(){
+    // 	$('div#loading').removeAttr('id');
+  // });
+  var preloader = document.getElementById("loading");
+  // window.addEventListener('load', function(){
+  // 	preloader.style.display = 'none';
+  // 	})
+
+  function myFunction(){
+    preloader.style.display = 'none';
+  };
+</script>
 
 <style>
   /* ---- reset ---- */
