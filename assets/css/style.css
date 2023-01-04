@@ -1231,6 +1231,46 @@ section {
   padding: 0;
 }
 
+/* ------------speaker card---------------------------------- */
+#speakercard .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: red;
+  border: 2px solid rgb(214, 25, 25);
+}
+
+#speakercard  .social-links {
+  padding-bottom: 20px;
+}
+
+#speakercard  .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #fff;
+  color: red;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  border: 1px solid red;
+}
+
+#speakercard .social-links a:hover {
+  background: red;
+  color: #fff;
+}
+/* ---------------------------------------------------------- */
+
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/

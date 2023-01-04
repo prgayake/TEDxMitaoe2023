@@ -39,7 +39,8 @@
   ======================================================== -->
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+  <div id="loaderback"><div id="loader"></div></div>
   <div id="particles-js"></div>
 
   <!-- ======= Header ======= -->
@@ -96,6 +97,8 @@
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up" class="img-fluid animated">SonicBoom </h1><br>
+          <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+
           <h2 data-aos="fade-up" data-aos-delay="400">On our path towards our passion and ideals we strive to be
             fearless, grow to be our best and break down all known boundaries. No excuses, No fears, No limits</h2>
           <!-- <h3 data-aos="fade-up" data-aos-delay="400">A sonic boom is a sound associated with shock waves created when an object travels through the air faster than the speed of sound. Sonic booms generate enormous amounts of sound energy, sounding similar to an explosion or a thunderclap to the human ear. A decibel is the primary unit measurement of sound.</h3> -->
@@ -104,8 +107,14 @@
             <i class="bi bi-calendar4"></i> 22th Jan 2023
           </h2>
           <h2 data-aos="fade-up" data-aos-delay="400">
-            <!-- add google maps icons -->
-            <i class="bi bi-geo-alt-fill"></i> Auto Cluster Exhibition Center, Pune
+            <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/oaflahpk.json"
+    trigger="loop"
+    colors="primary:#c71f16"
+    style="width:40px;height:40px; margin: -10px;">
+    
+</lord-icon> Auto Cluster Exhibition Center, Pune
           </h2>
 
           <div data-aos="fade-up" data-aos-delay="800">
@@ -160,6 +169,23 @@
         </div>
       </div>
     </section>
+    <style>
+      #loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #cb1616;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+    </style>
     <!-- End Clients Section -->
 
     <!-- ======= About Us Section ======= -->
@@ -1171,3 +1197,16 @@
     /* background-position: 50% 50%; */
   }
 </style>
+
+<script>
+  var myVar;
+  
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+  
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
