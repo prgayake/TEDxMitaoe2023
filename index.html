@@ -40,7 +40,6 @@
 </head>
 
 <body onload="myFunction()" style="margin:0;">
-  <div id="loaderback"><div id="loader"></div></div>
   <div id="particles-js"></div>
 
   <!-- ======= Header ======= -->
@@ -48,7 +47,7 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html">TEDx <span style="color: white;">MITAOE</span></a></h1>
+        <h1><a href="index.html">TED<sup>x</sup><span style="color: white;">MITAOE</span></a></h1>
         <span style="font-size: 8px;color: red;">x</span> <span style="font-size: 8px;color: white;"> = independently
           organised TED event ABOUT EVENT</span>
 
@@ -59,12 +58,12 @@
       <nav id="navbar" class="navbar">
 
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto active" href="">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Speakers</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Sponsors</a></li>
+          <li><a class="nav-link scrollto" href="speaker.html">Speakers</a></li>
+          <li><a class="nav-link scrollto " href="sponsors.html">Sponsors</a></li>
           <li><a class="nav-link scrollto" href="team.html">Team</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Previous Event</a></li>
+          <li><a class="nav-link scrollto" target="_blank" href="https://2021.tedxmitaoe.com">Previous Event</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -99,8 +98,10 @@
           <h1 data-aos="fade-up" class="img-fluid animated">SonicBoom </h1><br>
           <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
 
-          <h2 data-aos="fade-up" data-aos-delay="400">On our path towards our passion and ideals we strive to be
-            fearless, grow to be our best and break down all known boundaries. No excuses, No fears, No limits</h2>
+          <h2 data-aos="fade-up" data-aos-delay="400">Hearts racing with agog; Hides something behind the fog,<br>
+            Morphines electrifying the nerves; Let’s see what the suspense serves,<br>
+            Look at the rebellion in the ocean; Its signaling barriers being broken,<br>
+            Purpose and grit rising with a zoom; Racing and lightening occurs <span style="color: red;">SONIC BOOM</span></h2>
           <!-- <h3 data-aos="fade-up" data-aos-delay="400">A sonic boom is a sound associated with shock waves created when an object travels through the air faster than the speed of sound. Sonic booms generate enormous amounts of sound energy, sounding similar to an explosion or a thunderclap to the human ear. A decibel is the primary unit measurement of sound.</h3> -->
           <h2 data-aos="fade-up" data-aos-delay="400">
             <!-- add date icons -->
@@ -136,56 +137,31 @@
       <div class="container">
         <div class="row">
           <h2 style="color: red;">Our Sponsors</h2>
-
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="" data-aos="zoom-in">
+            <img src="" class="img-fluid" alt="" data-aos="zoom-in"
+              data-aos-delay="100" />
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="" data-aos="zoom-in"
+              data-aos-delay="100" />
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="assets/img/clients/client-8.png" class="img-fluid" alt="" data-aos="zoom-in">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="" data-aos="zoom-in"
+            <img src="assets/img/clients/client-7.png" class="img-fluid" alt="" data-aos="zoom-in"
               data-aos-delay="100" />
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="" data-aos="zoom-in"
+            <img src="assets/img/clients/client-9.png" class="img-fluid" alt="" data-aos="zoom-in"
               data-aos-delay="200" />
           </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="" data-aos="zoom-in"
-              data-aos-delay="300" />
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="" data-aos="zoom-in"
-              data-aos-delay="400" />
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="" data-aos="zoom-in"
-              data-aos-delay="500" />
-          </div>
-
         </div>
       </div>
     </section>
-    <style>
-      #loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 120px;
-  height: 120px;
-  margin: -76px 0 0 -76px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #cb1616;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
 
-    </style>
     <!-- End Clients Section -->
 
     <!-- ======= About Us Section ======= -->
@@ -220,12 +196,36 @@
 
           </div>
 
+          <div id="new-div" class="col-lg-8pt-2 pt-lg-0" style="display: none;" data-aos="fade-up" data-aos-delay="300">
+            <p>
+            <h4 style="color: red;">About TEDxMITAOE Theme</h4>
+
+            Hearts racing with agog; Hides something behind the fog,<br>
+            Morphines electrifying the nerves; Let’s see what the suspense serves,<br>
+            Look at the rebellion in the ocean; Its signaling barriers being broken,<br>
+            Purpose and grit rising with a zoom; Racing and lightening occurs
+            </p>
+
+          </div>
+
           <div style="margin: 20px;" class="col-lg-12 col-md-12 text-center">
-            <a href="#" class="btn-learn-more">Learn More</a>
+            <a id="learn-more-button" class="btn-learn-more">Learn More</a>
           </div>
         </div>
       </div>
     </section>
+    
+    <script>
+      const learnMoreButton = document.getElementById('learn-more-button');
+learnMoreButton.addEventListener('click', function() {
+  const newDiv = document.getElementById('new-div');
+  newDiv.style.display = 'block';
+
+});
+
+
+    </script>
+
     <!-- End About Us Section -->
 
     <!-- ======= Counts Section ======= -->
@@ -676,7 +676,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="assets/img/team/team-5.png" class="img-fluid" alt="" />
+                <img src="assets/img/team/dr_mahesh_goudar.png" class="img-fluid" alt="" />
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -685,8 +685,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Pradyumna Gayake</h4>
-                <span> Tech Lead</span>
+                <h4>Dr Mahesh Goudar</h4>
+                <span> DIRECTOR</span>
               </div>
             </div>
           </div>
@@ -694,7 +694,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="assets/img/team/team-5.png" class="img-fluid" alt="" />
+                <img src="assets/img/team/mayura-kinikar.jpg" class="img-fluid" alt="" />
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -703,8 +703,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Pradyumna Gayake</h4>
-                <span>Tech Lead</span>
+                <h4>Mayura Kulkarni</h4>
+                <span>DEAN</span>
               </div>
             </div>
           </div>
@@ -712,7 +712,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="" />
+                <img src="assets/img/team/mayura-pokharna.jpg" class="img-fluid" alt="" />
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -721,8 +721,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Anuj Barave</h4>
-                <span>Co Tech Lead</span>
+                <h4>Mayuri Pokharna</h4>
+                <span></span>
               </div>
             </div>
           </div>
@@ -730,7 +730,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="400">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" />
+                <img src="assets/img/team/nikhil_sardar.jpg" class="img-fluid" alt="" />
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -739,8 +739,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Pradyumna Gayake</h4>
-                <span>Tech Lead</span>
+                <h4>Nikhil Sardar</h4>
+                <span></span>
               </div>
             </div>
           </div>
@@ -811,7 +811,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" />
+                <img src="assets/img/team/dr_mahesh_goudar.png" class="img-fluid" alt="" />
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -820,8 +820,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Anuj Barave</h4>
-                <span>Co Tech Lead</span>
+                <h4>Dr Mahesh Goudar</h4>
+                <span> DIRECTOR</span>
               </div>
             </div>
           </div>
@@ -829,7 +829,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" />
+                <img src="assets/img/team/mayura-kinikar.jpg" class="img-fluid" alt="" />
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -838,8 +838,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Pradyumna Gayake</h4>
-                <span>Tech Lead</span>
+                <h4>Mayura Kulkarni</h4>
+                <span>DEAN</span>
               </div>
             </div>
           </div>
@@ -847,7 +847,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="" />
+                <img src="assets/img/team/mayura-pokharna.jpg" class="img-fluid" alt="" />
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -856,8 +856,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Anuj Barave</h4>
-                <span>Co Tech Lead</span>
+                <h4>Mayuri Pokharna</h4>
+                <span></span>
               </div>
             </div>
           </div>
@@ -865,7 +865,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="400">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" />
+                <img src="assets/img/team/nikhil_sardar.jpg" class="img-fluid" alt="" />
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -874,8 +874,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Pradyumna Gayake</h4>
-                <span>Tech Lead</span>
+                <h4>Nikhil Sardar</h4>
+                <span></span>
               </div>
             </div>
           </div>
@@ -883,6 +883,7 @@
           <div class="col-lg-12 col-md-12 text-center">
             <a class="btn-get-started scrollto"> View more.. </a>
           </div>
+
         </div>
       </div>
     </section>
@@ -1135,8 +1136,16 @@
       </div>
     </div>
   </footer><!-- End Footer -->
-
-
+  
+  <div id="preloader"></div>
+<script>
+    const preloader = document.querySelector('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove();
+    });
+  }
+</script>
   <!-- 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
@@ -1168,19 +1177,6 @@
 
 </html>
 
-<script>
-  // $(document).ready(function(){
-    // 	$('div#loading').removeAttr('id');
-  // });
-  var preloader = document.getElementById("loading");
-  // window.addEventListener('load', function(){
-  // 	preloader.style.display = 'none';
-  // 	})
-
-  function myFunction(){
-    preloader.style.display = 'none';
-  };
-</script>
 
 <style>
   /* ---- reset ---- */
@@ -1198,15 +1194,3 @@
   }
 </style>
 
-<script>
-  var myVar;
-  
-  function myFunction() {
-    myVar = setTimeout(showPage, 3000);
-  }
-  
-  function showPage() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("myDiv").style.display = "block";
-  }
-  </script>
