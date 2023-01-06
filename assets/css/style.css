@@ -352,7 +352,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# hero Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
@@ -377,7 +377,7 @@ h6 {
 #hero h2 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 15px;
 
 }
 
@@ -491,7 +491,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: rgb(0, 0, 0);
 }
 
 #preloader:before {
@@ -499,12 +499,12 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #0563bb;
+  border: 6px solid red;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
 }
@@ -1752,4 +1752,189 @@ section {
 
 #footer .footer-links a:hover {
   color: red;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero1 {
+  width: 100%;
+  height: 70vh;
+  background-color: rgba(59, 59, 59, 0.8);
+  overflow: hidden;
+  padding: 0;
+  margin-bottom: -120px;
+  position: relative;
+  z-index: 1;
+}
+
+#hero1 .carousel-item {
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#hero1 .carousel-item::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#hero1 .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 120px;
+}
+
+#hero1 .carousel-content {
+  text-align: center;
+}
+
+#hero1 h2 {
+  color: black;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#hero1 h2 span {
+  color: red;
+}
+
+#hero1 p {
+  width: 80%;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  margin: 0 auto 30px auto;
+  color: arken(black, 15);
+}
+
+#hero1 .carousel-inner .carousel-item {
+  transition-property: opacity;
+  background-position: center top;
+}
+
+#hero1 .carousel-inner .carousel-item,
+#hero1 .carousel-inner .active.carousel-item-start,
+#hero1 .carousel-inner .active.carousel-item-end {
+  opacity: 0;
+}
+
+#hero1 .carousel-inner .active,
+#hero1 .carousel-inner .carousel-item-next.carousel-item-start,
+#hero1 .carousel-inner .carousel-item-prev.carousel-item-end {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#hero1 .carousel-inner .carousel-item-next,
+#hero1 .carousel-inner .carousel-item-prev,
+#hero1 .carousel-inner .active.carousel-item-start,
+#hero1 .carousel-inner .active.carousel-item-end {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+#hero1 .carousel-control-prev,
+#hero1 .carousel-control-next {
+  width: 10%;
+}
+
+#hero1 .carousel-control-next-icon,
+#hero1 .carousel-control-prev-icon {
+  background: none;
+  font-size: 48px;
+  line-height: 1;
+  width: auto;
+  height: auto;
+  color: red;
+}
+
+#hero1 .carousel-indicators li {
+  cursor: pointer;
+  background: red;
+  overflow: hidden;
+  border: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  margin-bottom: 180px;
+  opacity: 0.2;
+}
+
+#hero1 .carousel-indicators li.active {
+  opacity: 1;
+}
+
+#hero1 .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid red;
+  background: red;
+}
+
+#hero1 .btn-get-started:hover {
+  background: transparent;
+  color: red;
+  text-decoration: none;
+}
+
+@media (max-height: 768px),
+(max-width: 1200px) {
+  #hero1 {
+    margin-bottom: 60px;
+  }
+
+  #hero1 .carousel-container {
+    padding-bottom: 0;
+  }
+
+  #hero1 .carousel-indicators li {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero1 {
+    height: 90vh;
+  }
+
+  #hero1 .carousel-item {
+    height: 90vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero1 p {
+    width: 50%;
+  }
+
+  #hero1 .carousel-control-prev,
+  #hero1 .carousel-control-next {
+    width: 5%;
+  }
 }
