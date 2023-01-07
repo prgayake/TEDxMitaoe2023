@@ -780,7 +780,8 @@ learnMoreButton.addEventListener('click', function() {
           </div>
 
           <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-            <form name="contact" method="POST" data-netlify="true" onsubmit="submit" class="php-email-form">
+            <form name="contact" method="POST" data-netlify="true" onsubmit="submit" data-netlify-honeypot="bot-field" class="php-email-form">
+              <input class="d-none" name="bot-field">
               <div class="form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
               </div>
