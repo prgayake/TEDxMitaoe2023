@@ -141,7 +141,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 400;
-  color: white;
+  color: #ffffff;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -162,11 +162,10 @@ h6 {
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: white;
-  padding: 8px 25px;
+  background: #ffffff;
+  padding: 8px 20px;
   margin-left: 30px;
-  border-radius: 50px;
-  font-weight: 600;
+  border-radius: 4px;
   color: red;
 }
 
@@ -179,7 +178,7 @@ h6 {
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 30px;
+  left: 14px;
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
@@ -198,7 +197,7 @@ h6 {
 
 .navbar .dropdown ul a {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .navbar .dropdown ul a i {
@@ -244,7 +243,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #222222;
+  color: #fefdfd;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -253,7 +252,7 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: black;
+  color: #fff;
 }
 
 @media (max-width: 991px) {
@@ -267,15 +266,14 @@ h6 {
 }
 
 .navbar-mobile {
-  /* position: fixed; */
+  position: fixed;
   overflow: hidden;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(9, 9, 9, 0.9);
+  background: rgba(61, 1, 1, 0.9);
   transition: 0.3s;
-  z-index: 999;
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -289,11 +287,11 @@ h6 {
   position: absolute;
   top: 55px;
   right: 15px;
-  /* bottom: 40px; */
+  bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  border-radius: 8px;
-  background-color: black;
+  border-radius: 10px;
+  background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -302,19 +300,18 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: white;
+  color: #700101;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: red;
+  color: #f14141;
 }
 
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
-  margin: 50px;
-  padding-left: 25%;
+  margin: 15px;
 }
 
 .navbar-mobile .dropdown ul {
@@ -344,7 +341,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #3498db;
+  color: #f14141;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -410,7 +407,6 @@ h6 {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
-
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -459,9 +455,9 @@ h6 {
 
 @media (max-width: 575px) {
   #hero .hero-img img {
-    margin-top: 80px;
+    margin-top: 15px;
     height: 70%;
-    width: 70%;
+    width: 60%;
   }
 
   #hero h2 {
@@ -471,7 +467,7 @@ h6 {
   }
 
   #hero h1 {
-    font-size: 22px;
+    font-size: 26px;
     line-height: 30px;
   }
 }
@@ -601,6 +597,7 @@ section {
   background: rgb(0, 0, 0);
   padding: 10px 0;
   text-align: center;
+
 }
 
 .clients .col-lg-2 {
@@ -1035,11 +1032,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #3498db;
+  border: 1px solid #9f9f9f;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3498db;
+  background-color: #db3434;
 }
 
 @media (max-width: 767px) {
@@ -1687,6 +1684,25 @@ section {
 
 .contact .emailform button[type=submit]:hover {
   background: red;
+}
+
+#cbtn {
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: red;
+  border: 2px solid rgb(214, 25, 25);
+}
+
+#cbtn:hover {
+  background-color: red;
+  color: white;
 }
 
 @-webkit-keyframes animate-loading {
