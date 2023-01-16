@@ -614,10 +614,6 @@ section {
   padding: 10px 0;
 }
 
-#sponb {
-  height: 100px;
-}
-
 .clients img:hover {
   filter: none;
   transform: scale(1.1);
@@ -632,10 +628,6 @@ section {
 @media (max-width: 575px) {
   .clients img {
     width: 30%;
-  }
-
-  #sponb {
-    height: 70px;
   }
 }
 
