@@ -51,8 +51,8 @@
             background-position: left top; 
             padding-top:95px;
             margin-bottom:60px;
-            -webkit-animation-duration: 50s; 
-            animation-duration: 60s; 
+            -webkit-animation-duration: 40s; 
+            animation-duration: 50s; 
             -webkit-animation-fill-mode: both; 
             animation-fill-mode: both; 
          }
@@ -80,6 +80,10 @@
             -webkit-animation-name: swing; 
             animation-name: swing; 
          }
+         .member1:hover {
+          transform: translateY(-6px);
+          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.35);
+        }
       </style> 
 </head>
 
@@ -415,7 +419,7 @@ learnMoreButton.addEventListener('click', function() {
         <div class="row" style="justify-content: space-evenly;">
           
           <div class="col-lg-3 col-md-6 d-flex flex-row flex-nowrap">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member member1" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
                 <img src="assets/img/speakers/amruta.png" class="img-fluid" alt="" />
                 <div class="social">
@@ -1063,7 +1067,7 @@ learnMoreButton.addEventListener('click', function() {
       <div class="row d-flex align-items-center">
         <div class="col-lg-12 text-lg-start text-center">
           <div class="copyright">
-            &copy; Copyright <strong>TEDxMITAOE</strong>. All Rights Reserved
+            &copy; Copyright <strong><span style="color: red;">TEDx</span>MITAOE</strong>. All Rights Reserved
           </div>
           <div class="credits">
             <!-- All the links in the footer should remain intact. -->

@@ -68,6 +68,21 @@
       .card-text {
         font-size: medium;
       }
+      #speakercard .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #fff;
+  color: red;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  border: 1px solid red;
+}
     </style>
 
     <!-- =======================================================
@@ -102,7 +117,7 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-            <li><a class="nav-link scrollto" href="index.html">About</a></li>
+            <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
             <li>
               <a class="nav-link scrollto " href="speaker.html"
                 >Speakers</a
@@ -111,7 +126,7 @@
             <li>
               <a class="nav-link scrollto active" href="sponsors.html">Sponsors</a>
             </li>
-            <li><a class="nav-link scrollto" href="team.html">Team</a></li>
+           
             <li>
               <a class="nav-link scrollto" href="https://2021.tedxmitaoe.com"
                 >Previous Event</a
@@ -134,7 +149,8 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-            <li><a class="getstarted scrollto" href="#about">Book Now</a></li>
+          <li><a href="#" class="getstarted scrollto" onclick="popup('tedxmitaoe-sonic-boom-443013');">Book Now</a></li>
+            <noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -144,7 +160,7 @@
 
     <!-- End Header -->
 
-    <section id="testimonials" class="testimonials1 section-bg" style="background-color:rgba(250, 249, 249, 0.164);">
+    <section id="testimonials" class="testimonials1 section-bg"i>
     <div class="container">
 
       <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100" >
@@ -152,14 +168,24 @@
 
           <div class="swiper-slide">
             <div class="testimonial-wrap">
-              <div class="testimonial-item" style="box-shadow: 0px 3px 10px;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 8px 0px inset;">
+              <div class="testimonial-item">
                 <img src="assets/img/clients/client-10.jpeg" class="testimonial-img" alt="">
                 <div class="down">
-                <h3>Silzeep</h3>
-                
+                <h3>Sipzeep</h3>
+                <h4>HYDRATION PARTNER</h4>
                 <p>
-                  JuiceKraft Foods & Beverages Pvt Ltd.
+                  SipZeep is an Indian lifestyle milk-based beverage which has two premium and affordable products: Premium Belgian 
+                        Cocoa and Rich Hazelnut, both of which are thick; free of additional colours & preservatives, 
+                        while equally having a delightful taste and soothes the consumer's taste buds
                 </p>
+                <div id="speakercard">
+                <div class="social-links">
+                  <a href="http://www.instagram.com/sipzeep/" class="instagram"><i class="bi bi-instagram"></i></a> &nbsp &nbsp
+                  <a href="https://www.facebook.com/sipzeep/" class="facebook"><i class="bi bi-facebook"></i></a>&nbsp &nbsp
+                  <a href="https://www.linkedin.com/company/sipzeep/" class="linkedin"><i class="bi bi-linkedin"></i></a>&nbsp &nbsp
+                  <!-- <a href="https://www.youtube.com/@TrulyNomadly" class="linkedin"><i class="bi bi-youtube"></i></a> -->
+                </div>
+              </div>
               </div>
               </div>
             </div>
@@ -168,13 +194,68 @@
 
           <div class="swiper-slide">
             <div class="testimonial-wrap">
-              <div class="testimonial-item" style="box-shadow: 0px 3px 8px;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">
+              <div class="testimonial-item">
+                <img src="assets/img/clients/client-13.jpg" class="testimonial-img" alt="">
+                <div class="down">
+                <h3>Bakul Catering</h3>
+                <h4>FOOD PARTNER</h4>
+                <p>
+                  Bakul Catering is one of the leading licensed Caterers in Pune. Since 2006, combination of good food, value for money with stupendous presentation coupled with warm welcome is what distinguishes Bakul Catering. The company's philosophy is to amuse the customers with 
+                  a wide assortment of cuisines, unmatched food quality, professional staff 
+                  <!-- and fabulous decor with highest standard and huge selection of menus for all occasions. -->
+                </p>
+                <div id="speakercard">
+                <!-- <div class="social-links">
+                  <a href="http://www.instagram.com/sipzeep/" class="instagram"><i class="bi bi-instagram"></i></a> &nbsp &nbsp
+                  <a href="https://www.facebook.com/sipzeep/" class="facebook"><i class="bi bi-facebook"></i></a>&nbsp &nbsp
+                  <a href="https://www.linkedin.com/company/sipzeep/" class="linkedin"><i class="bi bi-linkedin"></i></a>&nbsp &nbsp
+                   <a href="https://www.youtube.com/@TrulyNomadly" class="linkedin"><i class="bi bi-youtube"></i></a> 
+                </div> -->
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
                 <img src="assets/img/clients/client11.jpeg" class="testimonial-img" alt="">
                 <div class="down">
                 <h3>HouseofIdeas</h3>
-               
+                <h4>MERCHANDISE PARTNER</h4>
                 <p>
-                  HouseofIdeas® is a boutique agency dealing in Customized Gifting Solutions. With an experience of over 10 years in dealing with 2500+ products and having served 100+ companies till date, House of Ideas has become one of the most trusted brands in the Corporate Gifting segment in Maharashtra. Based out of Pune, HouseofIdeas® is known for its proven track record. We have been able to double our clients in 6 years based on mouth publicity and referrals.
+                  HouseofIdeas® is a boutique agency dealing in Customized Gifting Solutions. With an experience of over 10 years in dealing with 2500+ products and 
+                  having served 100+ companies till date, House of Ideas has become one of the most trusted brands 
+                  in the Corporate Gifting segment in Maharashtra. Based out of Pune, HouseofIdeas® is known for its proven track record. 
+                  <!-- We have been able to double our clients in 6 years based on mouth publicity and referrals. -->
+                </p>
+                <div id="speakercard">
+                <!-- <div class="social-links">
+                  <a href="http://www.instagram.com/sipzeep/" class="instagram"><i class="bi bi-instagram"></i></a> &nbsp &nbsp
+                  <a href="https://www.facebook.com/sipzeep/" class="facebook"><i class="bi bi-facebook"></i></a>&nbsp &nbsp
+                  <a href="https://www.linkedin.com/company/sipzeep/" class="linkedin"><i class="bi bi-linkedin"></i></a>&nbsp &nbsp
+                  <a href="https://www.youtube.com/@TrulyNomadly" class="linkedin"><i class="bi bi-youtube"></i></a> 
+                </div> -->
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="assets/img/clients/client-12.jpg" class="testimonial-img" alt="">
+                <div class="down">
+                <h3>Anup Lights</h3>
+                <h4>SOUNDS & LIGHT PARTNER</h4>
+                <p>
+                  Sounds and lights are the two most important factors for holding any event. Anup Lights just made our venue much prettier and more accessible to the audience. They are based in Nigdi, and provide services related to sound and lighting for any event.
                 </p>
               </div>
               </div>

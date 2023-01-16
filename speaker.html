@@ -26,6 +26,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
@@ -46,8 +47,8 @@
 
     .card:hover {
 
-      transform: translateY(-6px);
-      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.35);
+      transform: translateY(-5px);
+      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.943);
     }
 
     img {
@@ -94,7 +95,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto " href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
           <li><a class="nav-link scrollto active" href="speaker.html">Speakers</a></li>
           <li><a class="nav-link scrollto " href="sponsors.html">Sponsors</a></li>
           <!-- <li><a class="nav-link scrollto" href="team.html">Team</a></li> -->
@@ -118,7 +119,8 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a class="getstarted scrollto" href="#about">Book Now</a></li>
+          <li><a href="#" class="getstarted scrollto" onclick="popup('tedxmitaoe-sonic-boom-443013');">Book Now</a></li>
+          <noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -150,7 +152,7 @@
       <h2>Speaker</h2>
       <!-- <h2 style="font-size: 18px;">Core Team</h2> -->
     </div>
-    <div class="container py-3" id="shb5" data-aos="zoom-in-left">
+    <div class="container py-3" id="shb5" data-aos="zoom-in-right">
       <div class="card" style="padding: 20px;box-shadow: (0,0,0,0.505) 0px 3px 8px;">
         <div class="row ">
           <div class="col-md-3">
@@ -205,7 +207,7 @@
       </div>
     </div>
 
-    <div class="container py-3" id="shb4" data-aos="zoom-in-left">
+    <div class="container py-3" id="shb4" data-aos="zoom-in-right">
       <div class="card" style="padding: 20px;box-shadow: (0,0,0,0.505) 0px 3px 8px;">
         <div class="row ">
           <div class="col-md-3">
@@ -257,7 +259,7 @@
     </div>
 
 
-    <div class="container py-3" id="shb7" data-aos="zoom-in-left">
+    <div class="container py-3" id="shb7" data-aos="zoom-in-right">
       <div class="card" style="padding: 20px;box-shadow: (0,0,0,0.505) 0px 3px 8px;">
         <div class="row">
           <div class="col-md-3">
@@ -353,7 +355,7 @@
       <div class="row d-flex align-items-center">
         <div class="col-lg-12 text-lg-right text-center">
           <div class="copyright">
-            &copy; Copyright <strong>TEDxMITAOE</strong>. All Rights Reserved
+            &copy; Copyright <strong><span style="color: red;">TEDx</span>MITAOE</strong>. All Rights Reserved
           </div>
           <div class="credits">
             <!-- All the links in the footer should remain intact. -->
