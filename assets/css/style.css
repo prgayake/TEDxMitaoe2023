@@ -1296,6 +1296,20 @@ section {
   color: #fff;
 }
 
+@media (max-width: 575px) {
+  #speakercard .container {
+    width: 95%;
+    height: 75%;
+  }
+
+  #speakercard .container img {
+    width: 95%;
+    height: 95%;
+  }
+
+}
+
+
 /* ---------------------------------------------------------- */
 
 /*--------------------------------------------------------------
