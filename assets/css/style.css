@@ -184,7 +184,7 @@ h6 {
   padding: 10px 0;
   z-index: 99;
   opacity: 0;
-  background: #fff;
+  background: rgb(0, 0, 0);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
@@ -195,7 +195,7 @@ h6 {
 }
 
 .navbar .dropdown ul a {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
   padding: 10px 20x;
   font-size: 13px;
 
@@ -611,17 +611,13 @@ section {
 }
 
 .clients img {
-  width: 50%;
+  width: 75%;
   /* filter: grayscale(100); */
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 10px 0;
 }
 
-
-#sponb {
-  height: 110px;
-}
 
 .clients img:hover {
   filter: none;
@@ -630,13 +626,13 @@ section {
 
 @media (max-width: 768px) {
   .clients img {
-    width: 40%;
+    width: 80%;
   }
 }
 
 @media (max-width: 575px) {
   .clients img {
-    width: 30%;
+    width: 80%;
   }
 
   #sponb {
