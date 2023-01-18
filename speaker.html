@@ -26,6 +26,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
@@ -41,13 +42,12 @@
     }
 
     .card {
-      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.208);
     }
 
     .card:hover {
-
-      transform: translateY(-6px);
-      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.35);
+      border: 1px solid black;
+      box-shadow: 0px 20px 40px rgba(5, 0, 0, 0.865);
     }
 
     img {
@@ -94,12 +94,21 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto " href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
           <li><a class="nav-link scrollto active" href="speaker.html">Speakers</a></li>
           <li><a class="nav-link scrollto " href="sponsors.html">Sponsors</a></li>
           <!-- <li><a class="nav-link scrollto" href="team.html">Team</a></li> -->
-          <li>
+          <!-- <li>
             <a class="nav-link scrollto" href="https://2021.tedxmitaoe.com">Previous Event</a>
+          </li> -->
+          <li class="dropdown">
+            <a href="#"
+              ><span>Previous Events</span> <i class="bi bi-chevron-down"></i
+            ></a>
+            <ul>
+              <li><a href="https://2021.tedxmitaoe.com" target="_blank">TEDxMITAOE 2021</a></li>
+              <li><a href="https://tedxmitaoe.github.io/TEDxMITAOE-2020/" target="_blank">TEDxMITAOE 2020</a></li>
+            </ul>
           </li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -118,7 +127,8 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a class="getstarted scrollto" href="#about">Book Now</a></li>
+          <li><a href="#" class="getstarted scrollto" onclick="popup('tedxmitaoe-sonic-boom-443013');">Book Now</a></li>
+          <noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -150,22 +160,17 @@
       <h2>Speaker</h2>
       <!-- <h2 style="font-size: 18px;">Core Team</h2> -->
     </div>
-    <div class="container py-3" id="shb5" data-aos="zoom-in-left">
+    <div class="container py-3" id="shb5" data-aos="zoom-in-right">
       <div class="card" style="padding: 20px;box-shadow: (0,0,0,0.505) 0px 3px 8px;">
         <div class="row ">
-          <div class="col-md-3">
+          <div class="col-md-3 anuj">
             <img src="assets/img/speakers/amruta.png" class="w-100">
           </div>
           <div class="col-md-8 px-3">
             <div class="card-block px-3">
               <h4 class="card-title">Amruta Khanvilkar</h4>
               <br>
-              <p class="card-text">Marking her versatility in the Marathi and Bollywood industries with movies like <br> 
-                ‘Katyar Kaljat Ghusli’, ‘Chandramukhi’, ‘Raazi’, ‘Satymev Jayate’ 
-                and many more, Amruta is a skillful actress <br> and a breathtaking dancer. 
-                She has competently participated in various reality shows including <br>
-                 ‘Fear Factor: Khatron Ke Khiladi’.
-                
+              <p class="card-text" style="text-align: justify;">Marking her versatility in the Marathi and Bollywood industries with movies like ‘Katyar Kaljat Ghusli’, ‘Chandramukhi’, ‘Raazi’, ‘Satymev Jayate’ and many more, Amruta is a skillful actress and a breathtaking dancer. She has competently participated in various reality shows.
 
               </p>
               <div class="social-links">
@@ -190,11 +195,11 @@
               <h4 class="card-title">Madhura Bachal
               </h4>
               <br>
-              <p class="card-text">Madhura Bachal is an accomplished YouTuber, Chef, and Businesswoman who is the heart and soul<br> of the first Marathi youtube channel to have crossed a humongous number of 6 million subscribers.<br> She is the pathfinder of Maharashtrian cuisine in the digital world.
+              <p class="card-text" style="text-align: justify;">Madhura Bachal is an accomplished YouTuber, Chef, and Businesswoman who is the heart and soul of the first Marathi youtube channel to have crossed a humongous number of 6 million subscribers. She is the pathfinder of Maharashtrian cuisine in the digital world.
               </p>
               <div class="social-links">
                 <a href="https://twitter.com/madhurasrecipe" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="hhttps://www.facebook.com/people/Madhura-Mangesh-Bachal/100001002606946/" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.facebook.com/people/Madhura-Mangesh-Bachal/100001002606946/" class="facebook"><i class="bi bi-facebook"></i></a>
                 <a href="https://www.instagram.com/madhurasrecipe/?hl=en" class="instagram"><i class="bi bi-instagram"></i></a>
                 <a href="https://www.youtube.com/@MadhurasRecipeMarathi" class="youtube"><i
                     class="bi bi-youtube"></i></a>
@@ -205,7 +210,7 @@
       </div>
     </div>
 
-    <div class="container py-3" id="shb4" data-aos="zoom-in-left">
+    <div class="container py-3" id="shb4" data-aos="zoom-in-right">
       <div class="card" style="padding: 20px;box-shadow: (0,0,0,0.505) 0px 3px 8px;">
         <div class="row ">
           <div class="col-md-3">
@@ -215,7 +220,7 @@
             <div class="card-block px-3">
               <h4 class="card-title">Ankit Sharma</h4>
               <br>
-              <p class="card-text">Ankit is a brilliant motorsport photographer and videographer who, through his noteworthy <br> work and passion,  is giving the world a peek into the awe-inspiring life behind wheels. <br>In addition, he has diligently covered the Dakar Rallies, an exhilarant rally race.
+              <p class="card-text" style="text-align: justify;">Ankit is a brilliant motorsport photographer and videographer who, through his noteworthy work and passion,  is giving the world a peek into the awe-inspiring life behind wheels.In addition, he has diligently covered the Dakar Rallies, an exhilarant rally race.
               </p>
               <div class="social-links">
                 <a href="https://twitter.com/mademachines" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -240,8 +245,8 @@
             <div class="card-block px-3">
               <h4 class="card-title">Shreya Jain</h4>
               <br>
-              <p class="card-text"> Shreya is a harmonic and appealing singer, songwriter, and video producer who has enchanted <br>
-                the audience with her live performance at Wembley Stadium, in London.  <br>
+              <p class="card-text" style="text-align: justify;"> Shreya is a harmonic and appealing singer, songwriter, and video producer who has enchanted 
+                the audience with her live performance at Wembley Stadium, in London.
                 She made a striking singing debut in Bollywood in the movie ‘Attack’ released in 2022.
               </p>
               <div class="social-links">
@@ -257,9 +262,9 @@
     </div>
 
 
-    <div class="container py-3" id="shb7" data-aos="zoom-in-left">
+    <div class="container py-3" id="shb7" data-aos="zoom-in-right">
       <div class="card" style="padding: 20px;box-shadow: (0,0,0,0.505) 0px 3px 8px;">
-        <div class="row ">
+        <div class="row">
           <div class="col-md-3">
             <img src="assets/img/speakers/sharana iyer .jpg" class="w-100">
           </div>
@@ -267,7 +272,7 @@
             <div class="card-block px-3">
               <h4 class="card-title">Sharanya Iyer </h4>
               <br>
-              <p class="card-text">Offbeat and lively, Sharanya is a Traveller and a radiant Content Creator <br>who has explored more than 26 countries. Moreover, she is Certified Rescue Diver and a Freediver<br> taking the conversations with the world underwater to a dreamy place.
+              <p class="card-text" style="text-align: justify;">Offbeat and lively, Sharanya is a Traveller and a radiant Content Creator who has explored more than 26 countries. Moreover, she is Certified Rescue Diver and a Freediver taking the conversations with the world underwater to a dreamy place.
               </p>
               <div class="social-links">
                 <a href="https://twitter.com/trulynomadly" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -280,7 +285,7 @@
         </div>
       </div>
     </div>
-
+    
     <div class="container py-3" data-aos="zoom-in-left" id="shb1">
       <div class="card" style="padding: 20px;">
         <div class="row">
@@ -289,11 +294,9 @@
           </div>
           <div class="col-md-8 px-3">
             <div class="card-block px-3">
-              <h4 class="card-title">Prashant Thakre & Niraj Ghanwate</h4>
+              <h4 class="card-title">Prashant Thakare & Niraj Ghanwate</h4>
               <br>
-              <p class="card-text">Dr. Prashant and Dr. Niraj are astute and bright professors in the field of Microbiology and Biotechnology. 
-                <br>They are patented innovators of a kit for the early detection of Antimicrobial Resistance. 
-                <br>They have effectively reduced the time taken for testing the susceptibility of diseases by a whopping 70%.
+              <p class="card-text" style="text-align: justify;">Dr. Prashant and Dr. Niraj are bright professors in the field of Microbiology and Biotechnology. They are patented innovators of a kit for the early detection of Antimicrobial Resistance. They have effectively reduced the time taken for testing the susceptibility of diseases by  70%.
               </p>
 
               <!-- add beautiful social media icons -->
@@ -322,7 +325,7 @@
 
               <h4 class="card-title">Gaurav Taori</h4>
               <br>
-              <p class="card-text">Gaurav is the inventor of Rakshak: a self-watering tree guard and deep-root irrigation system <br> protecting the tree and its survival. He is a passionate Entrepreneur and Director at Rainbow Greeners.<br> He has provided innovative solutions and sustainable tree plantations which are the needs of the time.
+              <p class="card-text" style="text-align: justify;">Gaurav is the inventor of Rakshak: a self-watering tree guard and deep-root irrigation system protecting the tree and its survival. He is a passionate Entrepreneur and Director at Rainbow Greeners. He has provided innovative solutions and sustainable tree plantations which are the need of the time.
               </p>
               <!-- add beautiful social media icons -->
               <div class="social-links">
@@ -352,7 +355,7 @@
       <div class="row d-flex align-items-center">
         <div class="col-lg-12 text-lg-right text-center">
           <div class="copyright">
-            &copy; Copyright <strong>TEDxMITAOE</strong>. All Rights Reserved
+            &copy; Copyright <strong><span style="color: red;">TEDx</span>MITAOE</strong>. All Rights Reserved
           </div>
           <div class="credits">
             <!-- All the links in the footer should remain intact. -->

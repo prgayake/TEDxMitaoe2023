@@ -51,8 +51,8 @@
             background-position: left top; 
             padding-top:95px;
             margin-bottom:60px;
-            -webkit-animation-duration: 50s; 
-            animation-duration: 60s; 
+            -webkit-animation-duration: 40s; 
+            animation-duration: 50s; 
             -webkit-animation-fill-mode: both; 
             animation-fill-mode: both; 
          }
@@ -80,6 +80,10 @@
             -webkit-animation-name: swing; 
             animation-name: swing; 
          }
+         .member1:hover {
+          transform: translateY(-6px);
+          box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.35);
+        }
       </style> 
 </head>
 
@@ -106,7 +110,16 @@
           <li><a class="nav-link scrollto" href="speaker.html">Speakers</a></li>
           <li><a class="nav-link scrollto " href="sponsors.html">Sponsors</a></li>
           <!-- <li><a class="nav-link scrollto" href="team.html">Team</a></li> -->
-          <li><a class="nav-link scrollto" target="_blank" href="https://2021.tedxmitaoe.com">Previous Event</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Previous Events</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="https://2021.tedxmitaoe.com" target="_blank">TEDxMITAOE 2021</a></li>
+                <li><a href="https://tedxmitaoe.github.io/TEDxMITAOE-2020/" target="_blank">TEDxMITAOE 2020</a></li>
+              </ul>
+            </li>
+          <!-- <li><a class="nav-link scrollto" target="_blank" href="https://2021.tedxmitaoe.com">Previous Event</a></li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><a href="#" class="getstarted scrollto" onclick="popup('tedxmitaoe-sonic-boom-443013');">Book Now</a></li>
         </ul>
@@ -163,29 +176,33 @@
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients clients">
       <div class="container">
-        <div class="row">
+        <div class="row" style="justify-content: space-evenly;">
           <h2 style="color: red;">Our Sponsors</h2>
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="" class="img-fluid" alt="" data-aos="zoom-in"
-              data-aos-delay="100" />
+          <div class="col-lg-2 col-md-6 col-6">
+            <a href="sponsors.html#sp1"><img src="assets/img/clients/client-10.jpeg" class="img-fluid" alt="" data-aos="zoom-in"
+              data-aos-delay="100" /></a>
           </div>
-          <!-- <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-10.jpeg" img-fluid" alt="" data-aos="zoom-in"
-              data-aos-delay="100" />
+          <div class="col-lg-2 col-md-6 col-6">
+            <a href="sponsors.html#sp3"><img src="assets/img/clients/client11.jpeg" class="img-fluid" alt="" data-aos="zoom-in"  data-aos-delay="100" /></a>
           </div>
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-8.png" class="img-fluid" alt="" data-aos="zoom-in">
-          </div> -->
+
+          <div class="col-lg-2 col-md-6 col-6">
+            <a href="sponsors.html#sp4"><img src="assets/img/clients/client-14.png" class="img-fluid" alt="" data-aos="zoom-in" 
+              data-aos-delay="100" /></a>
+          </div> 
+          <div class="col-lg-2 col-md-6 col-6">
+            <a href="sponsors.html#sp5"><img src="assets/img/clients/client-12.jpg" class="img-fluid" alt="" data-aos="zoom-in" 
+              data-aos-delay="100" /></a>
+          </div> 
+          <div class="col-lg-2 col-md-6 col-6">
+            <a href="sponsors.html#sp2"><img src="assets/img/clients/client-13.jpg" class="img-fluid" alt="" data-aos="zoom-in"
+              data-aos-delay="100" /></a>
+          </div>
 
           <!-- <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-7.png" class="img-fluid" alt="" data-aos="zoom-in"
-              data-aos-delay="100" />
-          </div> -->
-
-          <div class="col-lg-2 col-md-4 col-6">
             <img src="" class="img-fluid" alt="" data-aos="zoom-in"
               data-aos-delay="200" />
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -416,47 +433,29 @@ learnMoreButton.addEventListener('click', function() {
           <h2>Speakers</h2>
         </div>
 
-        <div class="row">
+        <div class="row" style="justify-content: space-evenly;">
+          
           <div class="col-lg-3 col-md-6 d-flex flex-row flex-nowrap">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member member1" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="assets/img/speakers/DR. Thakre2.PNG" class="img-fluid" alt="" />
+                <a href="/speaker.html#shb5"><img src="assets/img/speakers/amruta.png" class="img-fluid" alt="" /></a>
                 <div class="social">
-                   <a href="https://www.linkedin.com/in/dr-niraj-ghanwate-79086a2b/"><i class="bi bi-linkedin"></i></a>
-                  <a href="https://www.linkedin.com/in/prashant-thakare-56723ab/"><i class="bi bi-linkedin"></i></a>
-                  <!-- <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>  -->
+                  <a href="https://twitter.com/AmrutaOfficial?s=20&t=KU3nS5VLAvlIziXlvkwY0w"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/AmrutaOfficial"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/amrutakhanvilkar/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.youtube.com/@amrutakhanvilkarofficial/about"><i class="bi bi-youtube"></i></a> 
                 </div>
               </div>
               <div class="member-info">
-                <a href="/speaker.html#prashant"><h4>Dr. Prashant Thakre  &<br> Dr. Niraj </h4></a>
-                <span>Research</span>
+              <a href="/speaker.html#shb5"><h4>Amruta Khanvilkar</h4></a>
+                <span>Actress</span>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <img src="assets/img/speakers/touri.PNG" class="img-fluid" alt="" />
-                <div class="social">
-                  <a href="https://twitter.com/gauravtaori"><i class="bi bi-twitter"></i></a>
-                  <a href="https://m.facebook.com/gaurav.taori/"><i class="bi bi-facebook"></i></a>
-                  <a href="https://www.instagram.com/gauravtaori/"><i class="bi bi-instagram" ></i></a>
-                  <a href="https://www.linkedin.com/in/gaurav-taori-3b7aa438/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <a href="/speaker.html#shb2"><h4>Gaurav Taori</h4></a>
-                <span>Innovation, Entrepreneur</span>
-              </div>  
-            </div>
-          </div>
-
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" >
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
-                <img src="assets/img/speakers/madhura.PNG" class="img-fluid" alt="" />
+                <a href="/speaker.html#shb3"><img src="assets/img/speakers/madhura.PNG" class="img-fluid" alt="" /> </a>
                 <div class="social">
                   <a href="https://twitter.com/madhurasrecipe"><i class="bi bi-twitter"></i></a>
                   <a href="https://www.facebook.com/people/Madhura-Mangesh-Bachal/100001002606946/"><i class="bi bi-facebook"></i></a>
@@ -475,7 +474,7 @@ learnMoreButton.addEventListener('click', function() {
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="400">
               <div class="member-img">
-                <img src="assets/img/speakers/ankit.PNG" class="img-fluid" alt="" />
+                <a href="/speaker.html#shb4"><img src="assets/img/speakers/ankit.PNG" class="img-fluid" alt="" /></a>
                 <div class="social">
                   <a href="https://twitter.com/mademachines"><i class="bi bi-twitter"></i></a>
                   <a href="https://m.facebook.com/people/Ankit-Sharma/100006470356513/?comment_id=Y29tbWVudDoxMDYwMDQxNjY0MDMzMjc4XzEwNjAwNDE5ODczNjY1Nzk%3D"><i class="bi bi-facebook"></i></a>
@@ -493,18 +492,17 @@ learnMoreButton.addEventListener('click', function() {
           <div class="col-lg-3 col-md-6 d-flex flex-row flex-nowrap">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="assets/img/speakers/sheyaJain.jpg" class="img-fluid" alt="" />
+                <a href="/speaker.html#shb6"><img src="assets/img/speakers/sheyajain2.png" class="img-fluid" alt="" /></a>
                 <div class="social">
                   <a href="https://twitter.com/shreyajainmusic"><i class="bi bi-twitter"></i></a>
                   <a href="https://www.facebook.com/shreyajainmusic/"><i class="bi bi-facebook"></i></a>
                   <a href="https://www.instagram.com/shreyajainmusic/"><i class="bi bi-instagram"></i></a>
                   <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
                   <a href="https://www.youtube.com/@ShreyaJainMusic/"><i class="bi bi-youtube"></i></a>
-
                 </div>
               </div>
               <div class="member-info">
-               <a href="/speaker.html#shb5"><h4>Shreya Jain</h4></a>
+               <a href="/speaker.html#shb6"><h4>Shreya Jain</h4></a>
                 <span>Singer</span>
               </div>
             </div>
@@ -513,7 +511,7 @@ learnMoreButton.addEventListener('click', function() {
           <div class="col-lg-3 col-md-6 d-flex flex-row flex-nowrap">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="assets/img/speakers/sharana iyer .jpg" class="img-fluid" alt="" />
+                <a href="/speaker.html#shb7"><img src="assets/img/speakers/sharana iyer .jpg" class="img-fluid" alt="" /></a>
                 <div class="social">
                   <a href="https://twitter.com/trulynomadly"><i class="bi bi-twitter"></i></a>
                   <a href="https://www.facebook.com/trulynomadly/"><i class="bi bi-facebook"></i></a>
@@ -523,7 +521,7 @@ learnMoreButton.addEventListener('click', function() {
                 </div>
               </div>
               <div class="member-info">
-                <a href="/speaker.html#shb6"><h4>Sharanya Iyer</h4></a>
+                <a href="/speaker.html#shb7"><h4>Sharanya Iyer</h4></a>
                 <span>Traveller </span>
               </div>
             </div>
@@ -532,20 +530,39 @@ learnMoreButton.addEventListener('click', function() {
           <div class="col-lg-3 col-md-6 d-flex flex-row flex-nowrap">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="assets/img/speakers/amruta.png" class="img-fluid" alt="" />
+                <a href="/speaker.html#shb1"><img src="assets/img/speakers/DR. Thakre2.PNG" class="img-fluid" alt="" /></a>
                 <div class="social">
-                  <a href="https://twitter.com/AmrutaOfficial?s=20&t=KU3nS5VLAvlIziXlvkwY0w"><i class="bi bi-twitter"></i></a>
-                  <a href="https://www.facebook.com/AmrutaOfficial"><i class="bi bi-facebook"></i></a>
-                  <a href="https://www.instagram.com/amrutakhanvilkar/"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.youtube.com/@amrutakhanvilkarofficial/about"><i class="bi bi-youtube"></i></a> 
-                </div>
+                  <a href="https://www.linkedin.com/in/dr-niraj-ghanwate-79086a2b/"><i class="bi bi-linkedin"></i></a>
+                 <a href="https://www.linkedin.com/in/prashant-thakare-56723ab/"><i class="bi bi-linkedin"></i></a>
+                 <!-- <a href=""><i class="bi bi-instagram"></i></a>
+                 <a href=""><i class="bi bi-linkedin"></i></a>  -->
+               </div>
               </div>
               <div class="member-info">
-              <a href="/speaker.html#shb7"><h4>Amruta Khanvilkar</h4></a>
-                <span>Actress</span>
+                <a href="/speaker.html#shb1"><h4>Dr. Prashant Thakare  &<br> Dr. Niraj </h4></a>
+                <span>Research</span>
               </div>
             </div>
           </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <a href="/speaker.html#shb2"><img src="assets/img/speakers/touri.PNG" class="img-fluid" alt="" /></a>
+                <div class="social">
+                  <a href="https://twitter.com/gauravtaori"><i class="bi bi-twitter"></i></a>
+                  <a href="https://m.facebook.com/gaurav.taori/"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/gauravtaori/"><i class="bi bi-instagram" ></i></a>
+                  <a href="https://www.linkedin.com/in/gaurav-taori-3b7aa438/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <a href="/speaker.html#shb2"><h4>Gaurav Taori</h4></a>
+                <span>Innovation, Entrepreneur</span>
+              </div>
+            </div>
+          </div>
+
 
           <div class="col-lg-12 col-md-12 text-center">
             <a href="speaker.html" class="btn-get-started scrollto"> View more.. </a>
@@ -1067,7 +1084,7 @@ learnMoreButton.addEventListener('click', function() {
       <div class="row d-flex align-items-center">
         <div class="col-lg-12 text-lg-start text-center">
           <div class="copyright">
-            &copy; Copyright <strong>TEDxMITAOE</strong>. All Rights Reserved
+            &copy; Copyright <strong><span style="color: red;">TEDx</span>MITAOE</strong>. All Rights Reserved
           </div>
           <div class="credits">
             <!-- All the links in the footer should remain intact. -->
@@ -1116,9 +1133,7 @@ learnMoreButton.addEventListener('click', function() {
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
   <!-- <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
 
-
 </body>
-
 </html>
 
 

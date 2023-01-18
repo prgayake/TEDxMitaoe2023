@@ -68,6 +68,21 @@
       .card-text {
         font-size: medium;
       }
+      #speakercard .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #fff;
+  color: red;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  border: 1px solid red;
+}
     </style>
 
     <!-- =======================================================
@@ -102,20 +117,29 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-            <li><a class="nav-link scrollto" href="index.html">About</a></li>
+            <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
             <li>
-              <a class="nav-link scrollto active" href="speaker.html"
+              <a class="nav-link scrollto " href="speaker.html"
                 >Speakers</a
               >
             </li>
             <li>
-              <a class="nav-link scrollto" href="sponsors.html">Sponsors</a>
+              <a class="nav-link scrollto active" href="sponsors.html">Sponsors</a>
             </li>
-            <!-- <li><a class="nav-link scrollto" href="team.html">Team</a></li>
-            <li> -->
+           
+            <!-- <li>
               <a class="nav-link scrollto" href="https://2021.tedxmitaoe.com"
                 >Previous Event</a
               >
+            </li> -->
+            <li class="dropdown">
+              <a href="#"
+                ><span>Previous Events</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="https://2021.tedxmitaoe.com" target="_blank">TEDxMITAOE 2021</a></li>
+                <li><a href="https://tedxmitaoe.github.io/TEDxMITAOE-2020/" target="_blank">TEDxMITAOE 2020</a></li>
+              </ul>
             </li>
             <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -134,7 +158,8 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-            <li><a class="getstarted scrollto" href="#about">Book Now</a></li>
+          <li><a href="#" class="getstarted scrollto" onclick="popup('tedxmitaoe-sonic-boom-443013');">Book Now</a></li>
+            <noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -144,73 +169,86 @@
 
     <!-- End Header -->
 
-    <section id="testimonials" class="testimonials1 section-bg" style="background-color:#f7fbfe;">
+    <section id="testimonials" class="testimonials1 section-bg">
     <div class="container">
 
       <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100" >
         <div class="swiper-wrapper">
 
-
-          
           <div class="swiper-slide">
             <div class="testimonial-wrap">
-              <div class="testimonial-item">
-                <div class="row ">
-                  <div class="col-md-3">
-                    <img src="assets/img/clients/client-10.jpeg"" class="w-100">
-                  </div>
-                  <div class="col-md-8 px-3">
-                    <div class="card-block px-3"> 
-                      <h1 class="card-title">Anup Lights </h1>
-                      <h4 class="card-title">SOUNDS AND LIGHTS PARTNER</h4>
-
-                      <p class="card-text">Sounds and lights are the two most important factors for holding any event. 
-                        Anup Lights just made our venue much prettier and more accessible to the audience. <br>
-                        They are based in Nigdi, and provide services related to sound and lighting for any event.
-                      </p>
-                      <div class="social-links">
-                        <a href="https://twitter.com/trulynomadly" class="twitter"><i class="bi bi-twitter"></i></a> &nbsp &nbsp
-                        <a href="https://www.facebook.com/trulynomadly/" class="facebook"><i class="bi bi-facebook"></i></a>&nbsp &nbsp
-                        <a href="https://www.instagram.com/trulynomadly/?hl=en" class="instagram"><i class="bi bi-instagram"></i></a>&nbsp &nbsp
-                        <a href="https://www.youtube.com/@TrulyNomadly" class="linkedin"><i class="bi bi-youtube"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-          <div class="swiper-slide">
-            <div class="testimonial-wrap">
-              <div class="testimonial-item">
-                <div class="row ">
-                  <div class="col-md-3">
-                    <img src="assets/img/clients/client-10.jpeg" class="w-100">
-                  </div>
-                  <div class="col-md-8 px-3">
-                    <div class="card-block px-3">
-                      <h1 class="card-title">Sipzeep </h1>
-                      <h4 class="card-title">HYDRATION PARTNER </h4>
-
-                      <p class="card-text">SipZeep is an Indian lifestyle milk-based beverage which has two premium and affordable products: Premium Belgian 
+              <div class="testimonial-item" id="sp1">
+                <img src="assets/img/clients/client-10.jpeg" class="testimonial-img" alt="">
+                <div class="down">
+                <h3>Sipzeep</h3>
+                <h4>HYDRATION PARTNER</h4>
+                <p style="text-align: justify;">
+                  SipZeep is an Indian lifestyle milk-based beverage which has two premium and affordable products: Premium Belgian 
                         Cocoa and Rich Hazelnut, both of which are thick; free of additional colours & preservatives, 
-                        while equally having a delightful taste and soothes the consumer's taste buds
-                      </p>
-                      <div class="social-links">
-                        <a href="http://www.instagram.com/sipzeep/" class="instagram"><i class="bi bi-instagram"></i></a> &nbsp &nbsp
-                        <a href="https://www.facebook.com/sipzeep/" class="facebook"><i class="bi bi-facebook"></i></a>&nbsp &nbsp
-                        <a href="https://www.linkedin.com/company/sipzeep/" class="linkedin"><i class="bi bi-linkedin"></i></a>&nbsp &nbsp
-                        <!-- <a href="https://www.youtube.com/@TrulyNomadly" class="linkedin"><i class="bi bi-youtube"></i></a> -->
-                      </div>
-                    </div>
-                  </div>
+                        while equally having a delightful taste and soothes the consumer's taste buds.
+                </p>
+                <div id="speakercard">
+                <div class="social-links">
+                  <a href="http://www.instagram.com/sipzeep/" class="instagram"><i class="bi bi-instagram"></i></a> &nbsp &nbsp
+                  <a href="https://www.facebook.com/sipzeep/" class="facebook"><i class="bi bi-facebook"></i></a>&nbsp &nbsp
+                  <a href="https://www.linkedin.com/company/sipzeep/" class="linkedin"><i class="bi bi-linkedin"></i></a>&nbsp &nbsp
+                  <a href="http://www.sipzeep.com" class="house"><i class="bi bi-house"></i></a>
                 </div>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item" id="sp2">
+                <img src="assets/img/clients/client-13.jpg" class="testimonial-img" alt="">
+                <div class="down">
+                <h3>Bakul Catering</h3>
+                <h4>FOOD PARTNER</h4>
+                <p style="text-align: justify;">
+                  One of Pune's top recognised caterers is Bakul Catering. Since 2006, Bakul Catering has been known for its exceptional value, delicious food, stunning presentation, and friendly service. The company's guiding principle is to entertain the clients with a wide variety of cuisines, unrivalled culinary quality, professional service, magnificent decor of the highest calibre, and a sizable number of menus for all occasions.
+                  <!-- and fabulous decor with highest standard and huge selection of menus for all occasions. -->
+                </p>
+                <div id="speakercard">
+                 <div class="social-links">
+                  <a href="https://www.instagram.com/bakulcatering/" class="instagram"><i class="bi bi-instagram"></i></a> &nbsp &nbsp
+                  <a href="https://www.facebook.com/bakulcateringpune/" class="facebook"><i class="bi bi-facebook"></i></a>&nbsp &nbsp
+                  <a href="https://in.linkedin.com/in/bakul-catering-185b361a4" class="linkedin"><i class="bi bi-linkedin"></i></a>&nbsp &nbsp
+                   <a href="https://www.bakulcaterings.com/" class="house"><i class="bi bi-house"></i></a> 
+                </div> 
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="assets/img/clients/client11.jpeg" class="testimonial-img" alt="">
+                <div class="down" id="sp3">
+                <h3>HouseofIdeas</h3>
+                <h4>MERCHANDISE PARTNER</h4>
+                <p style="text-align: justify">
+                  HouseofIdeas® is a boutique agency dealing in Customized Gifting Solutions. With an experience of over 10 years in dealing with 2500+ 
+products and having served 100+ companies till date, House of Ideas has become one of the most trusted brands in the Corporate Gifting 
+segment in Maharashtra. Based out of Pune, HouseofIdeas® is known for its proven track record. We have been able to double our clients in 6 years based on mouth publicity and referrals.
+                  <!-- We have been able to double our clients in 6 years based on mouth publicity and referrals. -->
+                </p>
+                <div id="speakercard">
+                 <div class="social-links">
+                  <a href="https://www.instagram.com/houseofideas.in/" class="instagram"><i class="bi bi-instagram"></i></a> &nbsp &nbsp
+                  <a href="https://www.facebook.com/HouseofIdeas.Pune/" class="facebook"><i class="bi bi-facebook"></i></a>&nbsp &nbsp
+                  <a href="https://www.linkedin.com/company/houseofideas-pune/" class="linkedin"><i class="bi bi-linkedin"></i></a>&nbsp &nbsp
+                  <a href="https://houseofideas.in/" class="house"><i class="bi bi-house"></i></a> 
+                </div> 
+              </div>
+              </div>
               </div>
             </div>
           </div>
@@ -219,37 +257,54 @@
           <div class="swiper-slide">
             <div class="testimonial-wrap">
               <div class="testimonial-item">
-                <div class="row ">
-                  <div class="col-md-3">
-                    <img src="assets/img/clients/client-10.jpeg" class="w-100">
-                  </div>
-                  <div class="col-md-8 px-3">
-                    <div class="card-block px-3">
-                      <h1 class="card-title">House of Ideas. </h1>
-                      <h4 class="card-title">MERCHANDISE PARTNER </h4>
-
-                      <p class="card-text">HouseofIdeas® is a boutique agency dealing in Customized Gifting Solutions. With an experience of over 10 years in dealing with 2500+ 
-                        products and having served 100+ companies till date, House of Ideas has become one of the most trusted brands in the Corporate Gifting 
-                        segment in Maharashtra. 
-                      </p>
-                      <div class="social-links">
-                        <a href="https://twitter.com/trulynomadly" class="twitter"><i class="bi bi-twitter"></i></a> &nbsp &nbsp
-                        <a href="https://www.facebook.com/trulynomadly/" class="facebook"><i class="bi bi-facebook"></i></a>&nbsp &nbsp
-                        <a href="https://www.instagram.com/trulynomadly/?hl=en" class="instagram"><i class="bi bi-instagram"></i></a>&nbsp &nbsp
-                        <a href="https://www.youtube.com/@TrulyNomadly" class="linkedin"><i class="bi bi-youtube"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <img src="assets/img/clients/client-14.png" class="testimonial-img" alt="">
+                <div class="down" id="sp3">
+                <h3>R Kets</h3>
+                <h4>COSMETIC PARTNER</h4>
+                <p style="text-align: justify">
+                  Those who have never indulged in one of our extraordinary spa body treatments; 
+                  R-Ket’s Unisex & Beauty Spa extend a warm invitation to come and rejuvenate. 
+                  Spa Life – Spa is about learning to live a life with joy & appreciate every moment of your life, 
+                  in doing, creating a personal to health & wellness. The focus of their wellness programs is firmly on balancing 
+                  the wellbeing as well as rejuvenate your Body, Mind & Soul to make you feel younger at all age. 
+                  <!-- They are totally dedicated on the importance of your health to transform you to real Mother Earth of new experiences and the restoration of balance.  -->
+                  <!-- They also offer a range of spa & massage services which let you to enjoy the beauty of nature that has given to you to pamper your skin & body and to provide therapeutic benefits. -->
+                </p>
+                <div id="speakercard">
+                 <div class="social-links">
+                  <a href="https://www.instagram.com/rketsunisexpune/" class="instagram"><i class="bi bi-instagram"></i></a> &nbsp &nbsp
+                  <a href="https://www.facebook.com/rketsunisexpune" class="facebook"><i class="bi bi-facebook"></i></a>&nbsp &nbsp
+                  <a href="https://www.linkedin.com/in/rkets-salon-a21bb6151/" class="linkedin"><i class="bi bi-linkedin"></i></a>&nbsp &nbsp
+                  <a href="http://rketssalon.in/" class="house"><i class="bi bi-house"></i></a> 
+                </div> 
+              </div>
+              </div>
               </div>
             </div>
           </div>
 
 
 
-
-
-
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="assets/img/clients/client-12.jpg" class="testimonial-img" alt="" id="sp5">
+                <div class="down">
+                <h3>Anup Lights</h3>
+                <h4>SOUNDS & LIGHT PARTNER</h4>
+                <p style="text-align: justify;">
+                  Sounds and lights are the two most important factors for holding any event. Anup Lights just made our venue much prettier and more accessible to the audience. They are based in Nigdi, and provide services related to sound and lighting for any event.
+                </p>
+                <div id="speakercard">
+                  <div class="social-links">
+                   <a href="https://www.instagram.com/anupsoundlights/" class="instagram"><i class="bi bi-instagram"></i></a> &nbsp &nbsp
+                   <a href="https://www.facebook.com/people/Anup-sound-lights/100071124156006/" class="facebook"><i class="bi bi-facebook"></i></a>&nbsp &nbsp
+                  </div> 
+               </div>
+              </div>
+              </div>
+            </div>
+          </div>
           </div>
           </div>
         </div>
@@ -266,7 +321,7 @@
         <div class="row d-flex align-items-center">
           <div class="col-lg-12 text-lg-right text-center">
             <div class="copyright">
-              &copy; Copyright <strong>TEDxMITAOE</strong>. All Rights Reserved
+              &copy; Copyright <strong><span style="color: red;">TEDx</span>MITAOE</strong>. All Rights Reserved
             </div>
             <div class="credits">
               <!-- All the links in the footer should remain intact. -->

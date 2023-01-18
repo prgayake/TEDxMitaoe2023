@@ -184,8 +184,7 @@ h6 {
   padding: 10px 0;
   z-index: 99;
   opacity: 0;
-  visibility: hidden;
-  background: #fff;
+  background: rgb(0, 0, 0);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
@@ -196,8 +195,10 @@ h6 {
 }
 
 .navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 15px;
+  color: rgb(255, 255, 255);
+  padding: 10px 20x;
+  font-size: 13px;
+
 }
 
 .navbar .dropdown ul a i {
@@ -207,7 +208,8 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: red;
+  background-color: red;
+  color: white;
 }
 
 .navbar .dropdown:hover>ul {
@@ -332,6 +334,7 @@ h6 {
 
 .navbar-mobile .dropdown ul a {
   padding: 10px 20px;
+  color: rgb(255, 0, 0);
 }
 
 .navbar-mobile .dropdown ul a i {
@@ -341,7 +344,8 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #f14141;
+  color: #ffffff;
+  background-color: red;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -594,7 +598,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   padding: 10px 0;
   text-align: center;
 
@@ -607,27 +611,32 @@ section {
 }
 
 .clients img {
-  width: 50%;
-  filter: grayscale(100);
+  width: 80%;
+  /* filter: grayscale(100); */
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 10px 0;
 }
 
+
 .clients img:hover {
   filter: none;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
   .clients img {
-    width: 40%;
+    width: 80%;
   }
 }
 
 @media (max-width: 575px) {
   .clients img {
-    width: 30%;
+    width: 80%;
+  }
+
+  #sponb {
+    height: 70px;
   }
 }
 
@@ -1287,6 +1296,20 @@ section {
   color: #fff;
 }
 
+@media (max-width: 575px) {
+  #speakercard .container {
+    width: 95%;
+    height: 75%;
+  }
+
+  #speakercard .container img {
+    width: 95%;
+    height: 95%;
+  }
+
+}
+
+
 /* ---------------------------------------------------------- */
 
 /*--------------------------------------------------------------
@@ -1321,6 +1344,11 @@ section {
   -webkit-box-shadow: 14px 12px 48px -13px rgba(20, 18, 18, 0.49);
   -moz-box-shadow: 14px 12px 48px -13px rgba(20, 18, 18, 0.49);
   transition: all 0.3s ease-in-out;
+}
+
+.team .member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 40px rgb(0, 0, 0);
 }
 
 @media (min-width: 1024px) {
